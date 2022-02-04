@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="relative flex flex-col gap-8 h-full">
         <div class="flex text-lg justify-center w-full mt-6 gap-3 text-white">
             <button @click="ChangePanel()" class="cursor-pointer hover:underline rounded-full bg-purple-800 p-2">State Machines</button>
             <h1 class="p-2">|</h1>
@@ -7,7 +7,7 @@
         </div>
 
         <!-- Current Selected Panel -->
-        <div v-if="MainPanelStateMachine">
+        <div class="h-full" v-if="MainPanelStateMachine">
             <Status />
         </div>
 
